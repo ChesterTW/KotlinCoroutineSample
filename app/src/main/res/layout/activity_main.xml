@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -14,5 +15,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLoadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Data"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="@id/tvResult"
+        app:layout_constraintEnd_toEndOf="@id/tvResult"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
