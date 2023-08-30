@@ -30,6 +30,7 @@ class CancelCoroutineActivity : AppCompatActivity() {
     private fun initView() {
         with(binding){
             btLoadDataWithTimeout.setOnClickListener {
+
                 lifecycleScope.launch {
                     progressBar.visibility = View.VISIBLE
                     // 設定時間
@@ -38,6 +39,7 @@ class CancelCoroutineActivity : AppCompatActivity() {
                     }
                     progressBar.visibility = View.GONE
                 }
+
             }
 
             btLoadDataWithJob.setOnClickListener {
